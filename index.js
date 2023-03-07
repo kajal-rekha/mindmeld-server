@@ -9,7 +9,7 @@ const userRoute = require("./routes/userRoute");
 const app = express();
 
 // middlewares
-app.use(express());
+app.use(express.json());
 app.use(cors());
 
 // endpoints
