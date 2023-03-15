@@ -1,3 +1,5 @@
+const express = require("express");
+
 const {
   createChat,
   findAllChats,
@@ -5,7 +7,7 @@ const {
 } = require("../controllers/chatController");
 
 // router
-const router = express.Route();
+const router = express.Router();
 
 // routes
 router.post("/", createChat);
